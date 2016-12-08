@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ltd2p8schedulecreator.CourseChooserController">
+   <children>
+      <TextField fx:id="courseNameField" layoutX="236.0" layoutY="88.0" prefHeight="39.0" prefWidth="335.0" promptText="Intro to Computer Science" />
+      <Label layoutX="54.0" layoutY="88.0" text="Course Name:">
+         <font>
+            <Font name="Calibri" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="courseAbbreviationField" layoutX="294.0" layoutY="184.0" prefHeight="39.0" prefWidth="51.0" promptText="CS" />
+      <TextField fx:id="courseNumberField" layoutX="568.0" layoutY="184.0" prefHeight="39.0" prefWidth="205.0" promptText="1000" />
+      <Label layoutX="52.0" layoutY="184.0" text="Course Abbreviation:">
+         <font>
+            <Font name="Calibri" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="369.0" layoutY="184.0" text="Course Number:">
+         <font>
+            <Font name="Calibri" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="courseLengthField" layoutX="368.0" layoutY="265.0" prefHeight="39.0" prefWidth="97.0" promptText="50" />
+      <Label layoutX="52.0" layoutY="269.0" text="Course Length (in minutes):">
+         <font>
+            <Font name="Calibri" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="349.0" text="Course Meeting Time:">
+         <font>
+            <Font name="Calibri" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="courseMeetingTimeField" layoutX="302.0" layoutY="345.0" prefHeight="39.0" prefWidth="97.0" promptText="8:00" />
+      <Button layoutX="543.0" layoutY="384.0" mnemonicParsing="false" onAction="#handleSubmit" text="Save Course Data" />
+      <Label fx:id="errorText" layoutX="421.0" layoutY="553.0" />
+      <Label layoutX="53.0" layoutY="430.0" text="Course Meeting Days:">
+         <font>
+            <Font name="Calibri" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="courseMeetingDaysField" layoutX="302.0" layoutY="430.0" prefHeight="39.0" prefWidth="97.0" />
+      <Button layoutX="543.0" layoutY="450.0" mnemonicParsing="false" onAction="#handleCancel" text="Return to Schedule" />
+      <Label layoutX="54.0" layoutY="485.0" text="1: MWF, 2: TTh, 3: M, 4: T, 5: W, 6: Th, 7: F" textFill="#00000079">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameError" alignment="CENTER" layoutX="317.0" layoutY="71.0" prefHeight="17.0" prefWidth="174.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="abbrevError" alignment="CENTER" layoutX="249.0" layoutY="167.0" prefHeight="17.0" prefWidth="141.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="numberError" alignment="CENTER" layoutX="573.0" layoutY="167.0" prefHeight="17.0" prefWidth="196.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lengthError" alignment="CENTER" layoutX="319.0" layoutY="248.0" prefHeight="17.0" prefWidth="196.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeError" alignment="CENTER" layoutX="242.0" layoutY="328.0" prefHeight="17.0" prefWidth="217.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="daysError" alignment="CENTER" layoutX="280.0" layoutY="415.0" prefHeight="17.0" prefWidth="141.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
