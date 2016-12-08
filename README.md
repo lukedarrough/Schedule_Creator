@@ -1,6 +1,8 @@
 # Schedule_Creator
 Luke Darrough CS 3330 Final Project Documentation
 
+ ***To run the program, use the .jar file in the dist folder.***
+
 The application's purpose is to create courses and add the created
 courses to a weekly schedule view.
 
